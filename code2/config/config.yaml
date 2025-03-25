@@ -7,9 +7,11 @@ limits_config:
   max_lookback_time: 30d # 28 days from today
   # response por secs º
   rate_limit: 1000 # 1000 requests per second
+  volume_limit: "5MB" # 5 MB por segundo
 
 overrides:
   "example":
     max_query_range: 10h # 10 hours
     max_lookback_time: 1d # 1 day from today
     rate_limit: 100 # 100 requests per second
+    volume_limit: "500KB" # 500 KB por segundo
