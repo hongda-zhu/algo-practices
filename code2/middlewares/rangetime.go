@@ -13,21 +13,21 @@ func isInRange(start time.Time, end time.Time, maxRange time.Duration) bool {
 	return end.UnixNano()-start.UnixNano() <= maxRange.Nanoseconds()
 }
 
-// Computes the maximum lookback time and compares with T
+// Computes the maxium lookback time and compares with T
 func isWithinLookbackTime(t time.Time, lookback time.Duration) bool {
 	nowNano := time.Now().UnixNano()
 	return nowNano-t.UnixNano() <= lookback.Nanoseconds()
 }
 
 func getDefaultStartTime() time.Time {
-	return time.Now().Add(-1 * time.Hour) // Remove 1h
+	return time.Now().Add(-1 * time.Hour) //Remove 1h
 }
 
 func getDefaultEndTime() time.Time {
 	return time.Now()
 }
 
-func RangeTimeLimiterMiddleware(cfg _config.ConfigInterface) gin.HandlerFunc {
+func RangeTimeLimiterMiddleware(cfg *_config.Config) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		tenantId := c.Request.Header.Get(_config.TENANT_ID_HEADER_NAME)
 		timeInput := c.Request.URL.Query().Get("time")
@@ -55,7 +55,8 @@ func RangeTimeLimiterMiddleware(cfg _config.ConfigInterface) gin.HandlerFunc {
 			return
 		}
 
-		// If time is set, we can skip the duration check
+		// If time is setted, we can skip the duration check...
+
 		if timeInput != "" {
 			c.Next()
 			return

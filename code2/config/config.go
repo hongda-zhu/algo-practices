@@ -14,15 +14,6 @@ import (
 //go:embed config.yaml
 var defaultConfig string
 
-// ConfigInterface defines the interface for configuration
-type ConfigInterface interface {
-	RateLimit(tenantId string) (int, error)
-	MaxQueryRange(tenantId string) (time.Duration, error)
-	MaxLookbackTime(tenantId string) (time.Duration, error)
-	TargetUrl() (*url.URL, error)
-	Print()
-}
-
 type LimitsConfig struct {
 	MaxQueryRange   string `mapstructure:"max_query_range"`
 	RateLimit       int    `mapstructure:"rate_limit"`
@@ -85,22 +76,22 @@ func (config *Config) RateLimit(tenantId string) (int, error) {
 	return config.LimitsConfig.RateLimit, nil //Default limits override
 }
 
-func (config *Config) MaxLookbackTime(tenantId string) (time.Duration, error) {
-	var r string
-	if override, exists := config.Overrides[tenantId]; exists {
-		r = override.MaxLookbackTime
-	} else {
-		r = config.LimitsConfig.MaxLookbackTime // Defaults MaxLookbackDays
-	}
-	return _utils.ParseCustomDuration(r)
-}
-
 func (config *Config) MaxQueryRange(tenantId string) (time.Duration, error) {
 	var r string
 	if override, exists := config.Overrides[tenantId]; exists {
 		r = override.MaxQueryRange
 	} else {
 		r = config.LimitsConfig.MaxQueryRange // Defaults maxquery range
+	}
+	return _utils.ParseCustomDuration(r)
+}
+
+func (config *Config) MaxLookbackTime(tenantId string) (time.Duration, error) {
+	var r string
+	if override, exists := config.Overrides[tenantId]; exists {
+		r = override.MaxLookbackTime
+	} else {
+		r = config.LimitsConfig.MaxLookbackTime // Defaults MaxLookbackDays
 	}
 	return _utils.ParseCustomDuration(r)
 }

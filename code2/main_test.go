@@ -42,7 +42,7 @@ func TestProxyDisableRateLimit(t *testing.T) {
 	targetURL, _ := url.Parse(stub.URL)
 	proxy := httputil.NewSingleHostReverseProxy(targetURL)
 
-	// Load custom configuration in Viper
+	// 🔹 Cargar configuración personalizada en Viper
 	viperConfig := LoadConfig(map[string]interface{}{
 		"limits_config.rate_limit":        -1,
 		"limits_config.max_query_range":   "672h",
@@ -61,7 +61,7 @@ func TestProxyDisableRateLimit(t *testing.T) {
 
 	// Run HTTP Get against API
 	req, _ := http.NewRequest("GET", "/query", nil)
-	req.Header.Set("X-Scope-OrgID", "test-tenant") // Simulating a tenant
+	req.Header.Set("X-Scope-OrgID", "test-tenant") // Simulamos un tenant
 	startTimeEx := time.Now().AddDate(0, 0, -1)
 	q := req.URL.Query()
 	q.Set("time", strconv.FormatInt(startTimeEx.UnixNano(), 10))

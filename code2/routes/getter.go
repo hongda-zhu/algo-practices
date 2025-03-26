@@ -12,7 +12,7 @@ const (
 	GET_ENDPOINT = "/loki/api/v1"
 )
 
-func AddGetRoutes(rg *gin.RouterGroup, rp *httputil.ReverseProxy, cfg _config.ConfigInterface) {
+func AddGetRoutes(rg *gin.RouterGroup, rp *httputil.ReverseProxy, cfg *_config.Config) {
 	api := rg.Group(GET_ENDPOINT, _middlewares.RateLimiterMiddleware(cfg), _middlewares.RangeTimeLimiterMiddleware(cfg))
 
 	/* Only Query + Range endopoints are considered */
@@ -23,4 +23,5 @@ func AddGetRoutes(rg *gin.RouterGroup, rp *httputil.ReverseProxy, cfg _config.Co
 	api.GET("/query", proxyResponse)
 
 	api.GET("/query_range", proxyResponse)
+
 }
