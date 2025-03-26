@@ -12,14 +12,10 @@ import (
 	"go.uber.org/zap"
 )
 
-type RateLimiterConfig interface {
-    RateLimit(tenantId string) (int, error)
-}
-
 // Store a rate limiter for each tenant
 var tenantLimiters sync.Map
 
-func RateLimiterMiddleware(cfg RateLimiterConfig) gin.HandlerFunc {
+func RateLimiterMiddleware(cfg _config.ConfigInterface) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		tenantId := c.Request.Header.Get(_config.TENANT_ID_HEADER_NAME)
 		rateLimitVal, _ := cfg.RateLimit(tenantId)
@@ -30,7 +26,6 @@ func RateLimiterMiddleware(cfg RateLimiterConfig) gin.HandlerFunc {
 		} else {
 			c.Next()
 		}
-
 	}
 }
 
