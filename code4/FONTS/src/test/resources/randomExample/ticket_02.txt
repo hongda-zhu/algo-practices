@@ -1,0 +1,11 @@
+1001 Bread
+1002 Milk
+1007 Bananas
+1008 Apples
+1010 Coffee_Beans
+1012 Chicken_Breast
+1014 Pasta_Spaghetti
+1017 Cereal
+1018 Potato_Chips
+1019 Chocolate_Bar
+1022 Carrots

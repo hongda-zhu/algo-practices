@@ -1,0 +1,8 @@
+1004 Cheese_Gouda
+1007 Bananas
+1009 Orange_Juice
+1010 Coffee_Beans
+1014 Pasta_Spaghetti
+1019 Chocolate_Bar
+1021 Rice
+1022 Carrots

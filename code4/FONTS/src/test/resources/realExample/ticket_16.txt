@@ -1,0 +1,9 @@
+1002 Milk
+1005 Cheese_Cheddar
+1007 Bananas
+1009 Orange_Juice
+1011 Tea_Earl_Grey
+1012 Chicken_Breast
+1013 Ground_Beef
+1014 Pasta_Spaghetti
+1015 Tomato_Sauce

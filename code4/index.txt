@@ -1,0 +1,23 @@
+Aquest programa està enfocat en ser un gestor de productes i botigues per a una cadena de supermercats.
+Es poden definir productes, botigues, i prestatges (circulars) de cada botiga.
+Els productes tenen relacions entre ells.
+Dos productes estan molt relacionats quan comprar un producte implica que és més probable que es compri l'altre.
+
+|A la carpeta DOCS trobareu documents relacionats amb el programa:
+- Javadoc
+- Algorismes i estructures de dades utilitzats
+- Casos d'ús
+- Diagrama de classes (inclou repartiment de feina, tot i que també es troba a @author)
+
+|A la carpeta FONTS trobareu el codi font del programa, que correspon al contingut del repositori de GitLab.
+També conté els tests unitaris al directori ./src/test/java/supermarket.
+TestRunnerDomain.java executa tots els tests (o executant la run configuration "test" de gradle).
+Per executar el programa, s'ha d'executar el main() de DomainDriver, que imprimeix explicacions de com fer-lo servir.
+gradle run també funciona però no permet interacció si s'executa des de l'IntelliJ.
+
+|A la carpeta EXE trobareu l'executable del programa (en format JAR), i inputs i outputs d'exemple.
+L'input es pot especificar redirigint l'entrada del programa, o també utilitzant la comanda "execute file".
+El directory tickets conté tiquets utilitzats per alguns inputs d'exemple.
+Si s'especifica l'input amb "execute file", l'output tindrà més coherència, ja que imprimirà també
+l'input a l'output (per mostrar context). Els ouptputs d'exemple estan fets redirigint l'entrada al fitxer
+(és a dir, sense fer servir execute file) per facilitar comparació.

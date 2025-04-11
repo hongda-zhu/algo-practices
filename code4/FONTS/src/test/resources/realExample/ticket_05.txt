@@ -1,0 +1,10 @@
+1001 Bread
+1003 Eggs
+1005 Cheese_Cheddar
+1008 Apples
+1011 Tea_Earl_Grey
+1012 Chicken_Breast
+1013 Ground_Beef
+1016 Yogurt
+1019 Chocolate_Bar
+1023 Onions

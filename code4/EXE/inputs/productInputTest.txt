@@ -1,0 +1,10 @@
+0
+add product
+1 potato 1.2 Normal
+add product
+2 cheese 0.86 Fridge
+y
+1
+show product
+2
+showall products

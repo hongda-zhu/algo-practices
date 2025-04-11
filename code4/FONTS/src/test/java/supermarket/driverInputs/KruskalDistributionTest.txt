@@ -1,0 +1,40 @@
+add product
+1 p1 1 a
+add product
+2 p2 1 a
+y
+24
+add product
+3 p3 1 a
+y
+15
+20
+add product
+4 p4 1 a
+y
+20
+120
+24
+add product
+5 p5 1 a
+y
+30
+40
+20
+60
+add store
+store1 1
+5 a
+y
+1
+2
+3
+4
+5
+-1
+calculate distribution
+store1
+y
+0
+KRUSKAL_APPROX
+FirstStartingNode

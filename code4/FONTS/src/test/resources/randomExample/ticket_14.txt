@@ -1,0 +1,6 @@
+1008 Apples
+1010 Coffee_Beans
+1014 Pasta_Spaghetti
+1023 Onions
+1024 Toilet_Paper
+1025 Paper_Towels

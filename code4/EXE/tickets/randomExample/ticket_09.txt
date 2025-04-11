@@ -1,0 +1,4 @@
+1007 Bananas
+1010 Coffee_Beans
+1014 Pasta_Spaghetti
+1025 Paper_Towels

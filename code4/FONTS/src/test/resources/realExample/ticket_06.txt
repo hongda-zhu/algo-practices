@@ -1,0 +1,13 @@
+1002 Milk
+1004 Cheese_Gouda
+1007 Bananas
+1009 Orange_Juice
+1010 Coffee_Beans
+1014 Pasta_Spaghetti
+1015 Tomato_Sauce
+1017 Cereal
+1020 Water_Bottle
+1021 Rice
+1022 Carrots
+1025 Paper_Towels
+1024 Toilet_Paper

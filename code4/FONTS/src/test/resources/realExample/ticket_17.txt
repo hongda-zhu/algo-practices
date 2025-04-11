@@ -1,0 +1,11 @@
+1001 Bread
+1003 Eggs
+1004 Cheese_Gouda
+1006 Almonds
+1008 Apples
+1010 Coffee_Beans
+1016 Yogurt
+1018 Potato_Chips
+1019 Chocolate_Bar
+1021 Rice
+1022 Carrots

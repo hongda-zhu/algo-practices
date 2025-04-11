@@ -1,0 +1,8 @@
+1001 Bread
+1003 Eggs
+1006 Almonds
+1008 Apples
+1011 Tea_Earl_Grey
+1012 Chicken_Breast
+1016 Yogurt
+1018 Potato_Chips

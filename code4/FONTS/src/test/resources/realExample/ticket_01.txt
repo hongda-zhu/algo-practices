@@ -1,0 +1,8 @@
+1001 Bread
+1002 Milk
+1003 Eggs
+1007 Bananas
+1009 Orange_Juice
+1010 Coffee_Beans
+1015 Tomato_Sauce
+1016 Yogurt

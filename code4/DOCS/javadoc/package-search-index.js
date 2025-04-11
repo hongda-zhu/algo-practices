@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"supermarket"},{"l":"supermarket.domain.algorithm"},{"l":"supermarket.domain.controllers"},{"l":"supermarket.domain.relations"},{"l":"supermarket.domain.supermarket"},{"l":"supermarket.exceptions"},{"l":"supermarket.tuples"}];updateSearchResults();

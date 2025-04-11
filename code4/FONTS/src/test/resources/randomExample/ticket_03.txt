@@ -1,0 +1,5 @@
+1009 Orange_Juice
+1011 Tea_Earl_Grey
+1021 Rice
+1023 Onions
+1025 Paper_Towels

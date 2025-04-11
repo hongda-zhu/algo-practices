@@ -1,0 +1,144 @@
+add product
+1 p1 1 a
+add product
+2 p2 1 a
+y
+20
+add product
+3 p3 1 a
+y
+20
+5
+add product
+4 p4 1 a
+n
+modify relation
+1 2 5
+show relation matrix
+modify relation
+1 4 10
+modify relation
+2 4 40
+modify relation
+3 4 100
+show relation matrix
+add store
+store1 2
+10 a
+4 a
+y
+1
+2
+3
+4
+-1
+show store
+store1
+calculate distribution
+store1
+y
+1
+SIMULATED_ANNEALING
+1000
+0.91
+500
+showall stores
+calculate distribution
+store1
+y
+0
+add store
+store2 2
+10 a
+4 a
+y
+1
+2
+3
+4
+-1
+showall stores
+calculate distribution
+store2
+y
+0
+SIMULATED_ANNEALING
+800
+0.95
+500
+showall stores
+add product
+5 p5 1 a
+y
+4
+10
+200
+60
+add product
+6 p6 1 a
+y
+30
+45
+1000
+125
+2
+add product
+7 p7 1 a
+y
+60
+70
+80
+90
+100
+110
+show relation matrix
+add store
+store3 1
+7 a
+y
+1
+2
+3
+4
+5
+6
+7
+-1
+calculate distribution
+store3
+y
+0
+SIMULATED_ANNEALING
+1500
+0.95
+700
+showall stores
+add shelf
+store3
+1 a 5
+withdraw product
+store3 0 1
+withdraw product
+store3 0 2
+withdraw product
+store3 0 3
+withdraw product
+store3 0 4
+withdraw product
+store3 0 5
+withdraw product
+store3 0 6
+withdraw product
+store3 0 7
+show store
+store3
+calculate distribution
+store3
+y
+1
+SIMMULATED_ANNEALING
+900
+0.85
+500
+showall stores
+

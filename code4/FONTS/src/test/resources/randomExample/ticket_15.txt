@@ -1,0 +1,15 @@
+1002 Milk
+1003 Eggs
+1004 Cheese_Gouda
+1005 Cheese_Cheddar
+1006 Almonds
+1009 Orange_Juice
+1013 Ground_Beef
+1014 Pasta_Spaghetti
+1016 Yogurt
+1017 Cereal
+1018 Potato_Chips
+1019 Chocolate_Bar
+1022 Carrots
+1024 Toilet_Paper
+1025 Paper_Towels

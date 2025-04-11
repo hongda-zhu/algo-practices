@@ -1,0 +1,14 @@
+1003 Eggs
+1005 Cheese_Cheddar
+1006 Almonds
+1008 Apples
+1010 Coffee_Beans
+1011 Tea_Earl_Grey
+1013 Ground_Beef
+1014 Pasta_Spaghetti
+1015 Tomato_Sauce
+1016 Yogurt
+1017 Cereal
+1019 Chocolate_Bar
+1023 Onions
+1024 Toilet_Paper

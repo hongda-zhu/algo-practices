@@ -1,0 +1,9 @@
+1001 Bread
+1003 Eggs
+1005 Cheese_Cheddar
+1007 Bananas
+1009 Orange_Juice
+1012 Chicken_Breast
+1016 Yogurt
+1017 Cereal
+1019 Chocolate_Bar

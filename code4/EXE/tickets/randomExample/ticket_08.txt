@@ -1,0 +1,12 @@
+1003 Eggs
+1004 Cheese_Gouda
+1005 Cheese_Cheddar
+1006 Almonds
+1007 Bananas
+1008 Apples
+1009 Orange_Juice
+1011 Tea_Earl_Grey
+1013 Ground_Beef
+1018 Potato_Chips
+1022 Carrots
+1023 Onions
